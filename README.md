@@ -1,5 +1,5 @@
-# Ingleside
-A simple flask scaffold for building client-side news graphics and applications. Includes:
+# Black Lives Matter Portaits Project
+TK
 
 - Livereload for fast development
 - Grunt tasks for serving application

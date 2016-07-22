@@ -5,16 +5,16 @@ from models import *
 
 
 # Project Title
-app.config['PROJ_TITLE'] = ''
+app.config['PROJ_TITLE'] = 'Black Lives Matter Portraits Project'
 
 # Site Path/Slug
-app.config['PATH'] = ''
+app.config['PATH'] = 'black-lives-matter'
 
 # Project Category for Omniture 
-app.config['CATEGORY'] = ''
+app.config['CATEGORY'] = 'News'
 
 # Project Hashtag
-app.config['HASHTAG'] = ''
+app.config['HASHTAG'] = 'blacklivesmatter'
 
 """
 slug completes:
