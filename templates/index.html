@@ -4,15 +4,81 @@
 
 {% block head %}
 {% include '_components/_social.html' %}
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
 {% endblock %}
 
 {% block content %}
 <main class="container">
-  <div class="row">
-    <div class="large-8 large-offset-2 columns">
-    
+	{% include '_components/_header.html' %}
+
+    <div class="title">
+		<h1>BLACK LIVES MATTER</h1>
+		 <div class="intro">
+    		{%include '_text/intro.html' %}
+    	</div>
+		<button>Read their stories</button>    
     </div>
-  </div>
+
+    <div id="highland">
+
+    	<div class="full-width-img">
+    		<img src="{{ url_for('static', filename='img/highland/1.jpg') }}">
+    		<div id="show1" class="showquote"></div>
+    		<p id="showquote1" class="quote">“As a physician I watch these videos and I see health care infractions.”</p>
+    	</div>
+    	<div class="text">
+    		{%include '_text/highland.html'%}
+    	</div>
+    	
+    </div>
+
+    <div id="kamau">
+
+    	<div class="full-width-img">
+    		<img src="{{ url_for('static', filename='img/kamau/2.jpg') }}">
+    		<p class="quote"></p>
+    	</div>
+    	
+    </div>
+
+    <div id="mistah">
+
+    	<div class="full-width-img">
+    		<img src="{{ url_for('static', filename='img/mistah/1.jpg') }}">
+    		<p class="quote"></p>
+    	</div>
+    	
+    </div>
+
+    <div id="zaynab">
+
+    	<div class="full-width-img">
+    		<img src="{{ url_for('static', filename='img/zaynab/1.jpg') }}">
+    		<p class="quote"></p>
+    	</div>
+    	
+    </div>
+
+    <div id="templeton">
+
+    	<div class="full-width-img">
+    		<img src="{{ url_for('static', filename='img/templeton/2.jpg') }}">
+    		<p class="quote"></p>
+    	</div>
+    	
+    </div>
+
+    <div id="wanda">
+
+    	<div class="full-width-img">
+    		<img src="{{ url_for('static', filename='img/wanda/1.jpg') }}">
+    		<p class="quote"></p>
+    	</div>
+    	
+    </div>
+
+
 </main>
 {% endblock %}
 
@@ -21,5 +87,14 @@
   $(document).ready(function() {
     App.init();
   });
+
+  // init controller
+	var controller = new ScrollMagic.Controller({globalSceneOptions: {reverse: false}});
+
+	// build scenes
+	new ScrollMagic.Scene({triggerElement: "#show1"})
+					.setClassToggle("#showquote1", "show") // add class toggle
+					.addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
 </script>
 {% endblock %}

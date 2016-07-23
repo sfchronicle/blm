@@ -8,8 +8,8 @@ body {
   background-color: $bg-color;
   font-size: $base-font;
   line-height:$line-height;
-  color: $black;
-  font-family: $serif;
+  color: $base-color;
+  font-family: $sans-serif-bold;
 }
 
 img {
@@ -155,7 +155,7 @@ header {
   overflow: visible;
   opacity: 0.9;
   a {
-    color: #333;
+    color: $link;
   }
 }
 
@@ -186,11 +186,9 @@ header {
 
 .logo-link {
   cursor: pointer;
-  margin: 0 0 0 10px;
-  
   img {
     opacity: 1;
-    height: 20px;
+    height: 24px;
   }
 }
 
@@ -338,7 +336,6 @@ footer {
 }
 
 .title {
-  font-family: $serif-bold;
   font-size: 60px;
   padding: 0 10px;
   text-align: center;
