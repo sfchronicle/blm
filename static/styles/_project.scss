@@ -84,6 +84,29 @@ header {
   clear: left;
 }
 
+.right-quote {
+  top: 50px;
+	font-size: 2.5em;
+	line-height: 1.4;
+	position: absolute;
+	max-width: 450px;
+	left: 0;
+	opacity:0;
+
+	@media (max-width:768px){
+		font-size:2em;
+	}
+
+	@media (max-width:630px){
+		font-size: 1.5em;
+	}
+
+	@media (max-width:500px){
+		font-size: 1em;
+		top:25px;
+	}
+}
+
 .quote {
   opacity: 0;
   position: absolute;
@@ -123,7 +146,19 @@ header {
 
 .showquote {
 	position: absolute;
-  bottom: 50%;
+  top: 50%;
+
+  &.early{
+  	top:37%;
+  }
+
+  &.wanda {
+  	top:30.5%;
+
+  	@media (max-width:768px){
+  		top:40%;
+  	}
+  }
 } 
 
 .show {
