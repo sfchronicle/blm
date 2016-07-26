@@ -4,24 +4,36 @@
 
 {% block head %}
 {% include '_components/_social.html' %}
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script><!-- 
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script> -->
 {% endblock %}
 
 {% block content %}
 <main class="container">
 	{% include '_components/_header.html' %}
 
-    <div class="title">
-		<h1>BLACK LIVES MATTER</h1>
-		 <div class="intro">
-    		{%include '_text/intro.html' %}
+    <div class="intro-container">
+    	<div class="intro-bg">
+    		<img src="{{ url_for('static', filename='img/mistah/1.jpg') }}">
     	</div>
-		<button>Read their stories</button>    
+    	<div class="dim"></div>
+	    <div class="title">
+			<h1>BLACK LIVES MATTER</h1>
+			 <div class="intro">
+	    		{%include '_text/intro.html' %}
+	    	</div>
+			<button>Read their stories</button>    
+	    </div>
+
     </div>
 
-    <div id="highland">
+    <div id="highland" class="portrait">
 
+    	<div class="subhead">
+			<h2>Dr. Tiffany Chioma Anaebere</h2>
+			<hr>
+			<p>The Emeryville resident, 31, is an emergency physician at Highland Hospital in Oakland</p>
+		</div>
     	<div class="full-width-img">
     		<img src="{{ url_for('static', filename='img/highland/1.jpg') }}">
     		<div id="show1" class="showquote"></div>
@@ -33,50 +45,124 @@
     	
     </div>
 
-    <div id="kamau">
+    <div id="kamau" class="portrait">
+
+    	<div class="subhead">
+    		<h2>W. Kamau Bell</h2>
+    		<hr>
+    		<p>The 43-year-old comedian and Berkeley resident hosts CNN’s “United Shades of America”</p>
+    	</div>
 
     	<div class="full-width-img">
     		<img src="{{ url_for('static', filename='img/kamau/2.jpg') }}">
-    		<p class="quote"></p>
+    		<div id="show2" class="showquote"></div>
+    		<p id="showquote2" class="quote">“I’m not ready to have the conversation with my daughters.”</p>
+    	</div>
+
+    	<div class="text">
+    		{%include '_text/kamau.html'%}
     	</div>
     	
     </div>
 
-    <div id="mistah">
+    <div id="mistah" class="portrait">
+
+    	<div class="subhead">
+    		<h2>Mistah F.A.B.</h2>
+    		<hr>
+    		<p>The Oakland resident, 34, is one of the Bay Area’s most popular rappers</p>
+    	</div>
 
     	<div class="full-width-img">
-    		<img src="{{ url_for('static', filename='img/mistah/1.jpg') }}">
-    		<p class="quote"></p>
+    		<img src="{{ url_for('static', filename='img/mistah/3.jpg') }}">
+    		<div id="show3" class="showquote"></div>
+    		<p id="showquote3" class="quote top">“We’re just a bullet away from being a hashtag.”</p>
+    	</div>
+
+    	<div class="text">
+    		{%include '_text/mistah.html'%}
     	</div>
     	
     </div>
 
-    <div id="zaynab">
+    <div id="zaynab" class="portrait">
+
+    	<div class="subhead">
+    		<h2>Zaynab AbdulQadir-Morris</h2>
+    		<hr>
+    		<p>The UC Berkeley student, 20, is a campus senator, activist and double major in African American studies and sociology</p>
+    	</div>
 
     	<div class="full-width-img">
     		<img src="{{ url_for('static', filename='img/zaynab/1.jpg') }}">
-    		<p class="quote"></p>
+    		<div id="show4" class="showquote"></div>
+    		<p id="showquote4" class="quote right">“My Facebook timeline … was a complete listing of details about deaths.”</p>
     	</div>
-    	
+
+    	<div class="text">
+    		{%include '_text/zaynab.html'%}
+    	</div>
+ 
     </div>
 
-    <div id="templeton">
+    <div id="templeton" class="portrait">
+
+    	<div class="subhead">
+    		<h2>John William Templeton</h2>
+    		<hr>
+    		<p>The 61-year-old historian on the African American experience in California co-founded National Black Business Month</p>
+    	</div>
 
     	<div class="full-width-img">
     		<img src="{{ url_for('static', filename='img/templeton/2.jpg') }}">
-    		<p class="quote"></p>
+    		<div id="show5" class="showquote"></div>
+    		<p id="showquote5" class="quote top">“I’m 61 years old, and I have been stopped by police 53 times in my life.”</p>
+    	</div>
+
+    	<div class="text">
+    		{%include '_text/templeton.html'%}
     	</div>
     	
     </div>
 
-    <div id="wanda">
+    <div id="wanda" class="portrait">
 
-    	<div class="full-width-img">
+    	<div class="subhead">
+    		<h2>Wanda Johnson</h2>
+    		<hr>
+    		<p>Her 22-year-old son, Oscar Grant, was killed on New Year’s Day 2009 in Oakland by a BART police officer</p>
+    	</div>
+
+    	<div class="full-width-img vertical">
     		<img src="{{ url_for('static', filename='img/wanda/1.jpg') }}">
-    		<p class="quote"></p>
+    		<div id="show6" class="showquote"></div>
+    		<p id="showquote6" class="quote">“Hearing my son say to the officer, ‘You shot me,’ it pierced my heart.”</p>
+    	</div>
+
+    	<div class="text">
+    		{%include '_text/wanda.html'%}
     	</div>
     	
     </div>
+
+    <div class="max">
+		<div class="credits">
+			{% import '_components/_credits.html' as credit %}
+			<!-- Variables are name, email slug and twitter handle -->
+			<div class="group">
+				<p>Reporter</p>
+				{{ credit.info('Hamed Aleaziz', 'haleaziz', 'Haleaziz' ) }}
+			</div>
+			<div class="group">
+				<p>Photographer</p>
+				{{credit.info('Leah Millis', 'lmillis', 'LeahMillis') }}
+			</div>
+			<div class="group">
+				<p>Interactive producer</p>
+				{{ credit.info('Lucio Villa', 'lvilla', 'luciovilla' ) }}
+			</div>
+		</div>
+	</div>
 
 
 </main>
@@ -84,17 +170,44 @@
 
 {% block javascript %}
 <script>
-  $(document).ready(function() {
-    App.init();
-  });
+	$(document).ready(function() {
+    	App.init();
+  	});
 
-  // init controller
+  	// init controller
 	var controller = new ScrollMagic.Controller({globalSceneOptions: {reverse: false}});
 
 	// build scenes
 	new ScrollMagic.Scene({triggerElement: "#show1"})
 					.setClassToggle("#showquote1", "show") // add class toggle
-					.addIndicators() // add indicators (requires plugin)
+					// .addIndicators() // add indicators (requires plugin)
 					.addTo(controller);
+
+	new ScrollMagic.Scene({triggerElement: "#show2"})
+					.setClassToggle("#showquote2", "show") // add class toggle
+					// .addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
+
+	new ScrollMagic.Scene({triggerElement: "#show3"})
+					.setClassToggle("#showquote3", "show") // add class toggle
+					// .addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
+
+	new ScrollMagic.Scene({triggerElement: "#show4"})
+					.setClassToggle("#showquote4", "show") // add class toggle
+					// .addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
+
+	new ScrollMagic.Scene({triggerElement: "#show5"})
+					.setClassToggle("#showquote5", "show") // add class toggle
+					// .addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
+
+	new ScrollMagic.Scene({triggerElement: "#show6"})
+					.setClassToggle("#showquote6", "show") // add class toggle
+					// .addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
+
+	$(".title").delay(1200).animate({"opacity": "1"}, 2000);
 </script>
 {% endblock %}
