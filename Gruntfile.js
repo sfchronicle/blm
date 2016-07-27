@@ -66,7 +66,11 @@ module.exports = function (grunt) {
     jshint: {
       options: {
         jshintrc: '.jshintrc',
-        reporter: require('jshint-stylish')
+        reporter: require('jshint-stylish'),
+        ignores: [
+          '<%= config.app %>/scripts/vendor.*.js',
+          '<%= config.app %>/scripts/main.*.js'
+        ]
       },
       all: [
         'Gruntfile.js',
@@ -80,7 +84,7 @@ module.exports = function (grunt) {
     sass: {
       options: {
         sourceMap: true,
-        includePaths: ['bower_components']
+        includePaths: ['static/bower_components']
       },
       dist: {
         files: [{
@@ -257,11 +261,6 @@ module.exports = function (grunt) {
       'open:dev',
       'watch'
     ]);
-  });
-
-  grunt.registerTask('server', function (target) {
-    grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
-    grunt.task.run([target ? ('serve:' + target) : 'serve']);
   });
 
   // Build

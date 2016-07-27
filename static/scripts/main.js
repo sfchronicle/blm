@@ -52,3 +52,43 @@ App = {
   }
   window.__twitterIntentHandler = true;
 }());
+
+$(".begin").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#highland").offset().top - 35
+        }, 500);
+    });
+
+    $(".fa-info-circle").click(function() {
+      $('#img-info').toggle();
+  });
+
+    // init controller
+  var controller = new ScrollMagic.Controller({globalSceneOptions: {reverse: false}});
+
+  // build scenes
+  new ScrollMagic.Scene({triggerElement: "#show1"})
+          .setClassToggle("#showquote1", "show") // add class toggle
+          .addTo(controller);
+
+  new ScrollMagic.Scene({triggerElement: "#show2"})
+          .setClassToggle("#showquote2", "show") // add class toggle
+          .addTo(controller);
+
+  new ScrollMagic.Scene({triggerElement: "#show3"})
+          .setClassToggle("#showquote3", "show") // add class toggle
+          .addTo(controller);
+
+  new ScrollMagic.Scene({triggerElement: "#show4"})
+          .setClassToggle("#showquote4", "show") // add class toggle
+          .addTo(controller);
+
+  new ScrollMagic.Scene({triggerElement: "#show5"})
+          .setClassToggle("#showquote5", "show") // add class toggle
+          .addTo(controller);
+
+  new ScrollMagic.Scene({triggerElement: "#show6"})
+          .setClassToggle("#showquote6", "show") // add class toggle
+          .addTo(controller);
+
+  $(".title").delay(1500).animate({"opacity": "1"}, 2000);

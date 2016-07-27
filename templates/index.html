@@ -14,14 +14,18 @@
     <div class="intro-container">
     	<div class="intro-bg">
     		<img src="{{ url_for('static', filename='img/mistah/1.jpg') }}">
+    		<i class="fa fa-info-circle"></i>
+    		<div id="img-info">
+    		<p class="caption">This is a photo of Mistah FAB. A caption is arriving soon.</p>
+		</div>
     	</div>
     	<div class="dim"></div>
 	    <div class="title">
-			<h1>BLACK LIVES MATTER</h1>
+			<h1>Black lives, black voices</h1>
 			 <div class="intro">
 	    		{%include '_text/intro.html' %}
 	    	</div>
-			<button class="begin">Read their stories</button>    
+			<i class="begin fa fa-angle-double-down"></i>
 	    </div>
 
     </div>
@@ -36,7 +40,10 @@
     	<div class="full-width-img">
     		<img src="{{ url_for('static', filename='img/highland/1.jpg') }}">
     		<div id="show1" class="showquote"></div>
-    		<p id="showquote1" class="quote">“As a physician I watch these videos and I see health care infractions.”</p>
+            <div id="showquote1" class="quote">
+    			<p>“As a physician I watch these videos and I see health care infractions.”</p>
+            </div>
+
     	</div>
     	<div class="text">
     		{%include '_text/highland.html'%}
@@ -55,7 +62,13 @@
     	<div class="full-width-img">
     		<img src="{{ url_for('static', filename='img/kamau/2.jpg') }}">
     		<div id="show2" class="showquote"></div>
-    		<p id="showquote2" class="quote">“I’m not ready to have the conversation with my daughters.”</p>
+    		<div id="showquote2" class="quote">
+    			<p>“I’m not ready to have the conversation with my daughters.”</p>
+    			<div class="sc-container">
+                	<span class="soundcite" data-url="/static/audio/kamau.mp3">Listen</span>
+              	</div>
+			</div>
+    		
     	</div>
 
     	<div class="text">
@@ -75,7 +88,13 @@
     	<div class="full-width-img">
     		<img src="{{ url_for('static', filename='img/mistah/3.jpg') }}">
     		<div id="show3" class="showquote early"></div>
-    		<p id="showquote3" class="quote top">“We’re just a bullet away from being a hashtag.”</p>
+    		<div id="showquote3" class="quote top">
+    			<p>“We’re just a bullet away from being a hashtag.”</p>
+    			<div class="sc-container">
+                	<span class="soundcite" data-url="/static/audio/mistah.mp3" data-plays="1">Listen</span>
+              	</div>
+    		</div>
+    		
     	</div>
 
     	<div class="text">
@@ -95,7 +114,12 @@
     	<div class="full-width-img">
     		<img src="{{ url_for('static', filename='img/zaynab/1.jpg') }}">
     		<div id="show4" class="showquote"></div>
-    		<p id="showquote4" class="quote right">“My Twitter timeline … was a complete listing of details about deaths.”</p>
+    		<div id="showquote4" class="quote right">
+    			<p>“My Twitter timeline … was a complete listing of details about deaths.”</p>
+    			<div class="sc-container">
+                	<span class="soundcite" data-url="/static/audio/zaynab.mp3" data-plays="1">Listen</span>
+              	</div>
+    		</div>
     	</div>
 
     	<div class="text">
@@ -115,7 +139,8 @@
     	<div class="full-width-img">
     		<img src="{{ url_for('static', filename='img/templeton/2.jpg') }}">
     		<div id="show5" class="showquote early"></div>
-    		<p id="showquote5" class="quote top">“I’m 61 years old, and I have been stopped by police 53 times in my life.”</p>
+    		<div id="showquote5" class="quote top">
+    			<p>“I’m 61 years old, and I have been stopped by police 53 times in my life.”</p></div>
     	</div>
 
     	<div class="text">
@@ -132,12 +157,12 @@
     		<p>Her 22-year-old son, Oscar Grant, was killed on New Year’s Day 2009 in Oakland by a BART police officer</p>
     	</div>
 
-    	<div class="full-width-img vertical">
-    		<img src="{{ url_for('static', filename='img/wanda/1.jpg') }}">
+    	<div class="full-width-img">
+    		<img src="{{ url_for('static', filename='img/wanda/2.jpg') }}">
     		<div id="show6" class="showquote wanda"></div>
-    	</div>
-    	<div class="full-width-img vertical">
-    		<p id="showquote6" class="right-quote">“Hearing my son say to the officer, ‘You shot me,’ it pierced my heart.”</p>
+    		<div id="showquote6" class="quote right higher">
+    			<p>“Hearing my son say to the officer, ‘You shot me,’ it pierced my heart.”</p>
+			</div>
     	</div>
 
     	<div class="text">
@@ -174,41 +199,5 @@
 	$(document).ready(function() {
     	App.init();
   	});
-
-  	$(".begin").click(function() {
-        $('html, body').animate({
-            scrollTop: $("#highland").offset().top - 35
-        }, 500);
-    });
-
-  	// init controller
-	var controller = new ScrollMagic.Controller({globalSceneOptions: {reverse: false}});
-
-	// build scenes
-	new ScrollMagic.Scene({triggerElement: "#show1"})
-					.setClassToggle("#showquote1", "show") // add class toggle
-					.addTo(controller);
-
-	new ScrollMagic.Scene({triggerElement: "#show2"})
-					.setClassToggle("#showquote2", "show") // add class toggle
-					.addTo(controller);
-
-	new ScrollMagic.Scene({triggerElement: "#show3"})
-					.setClassToggle("#showquote3", "show") // add class toggle
-					.addTo(controller);
-
-	new ScrollMagic.Scene({triggerElement: "#show4"})
-					.setClassToggle("#showquote4", "show") // add class toggle
-					.addTo(controller);
-
-	new ScrollMagic.Scene({triggerElement: "#show5"})
-					.setClassToggle("#showquote5", "show") // add class toggle
-					.addTo(controller);
-
-	new ScrollMagic.Scene({triggerElement: "#show6"})
-					.setClassToggle("#showquote6", "show") // add class toggle
-					.addTo(controller);
-
-	$(".title").delay(1200).animate({"opacity": "1"}, 2000);
 </script>
 {% endblock %}

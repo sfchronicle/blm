@@ -6,6 +6,7 @@ node_modules/
 bower_components/
 *.css
 *.css.map
+main.*.js
 build/
 data/
 .sass-cache/
