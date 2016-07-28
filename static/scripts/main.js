@@ -91,4 +91,8 @@ $(".begin").click(function() {
           .setClassToggle("#showquote6", "show") // add class toggle
           .addTo(controller);
 
+  new ScrollMagic.Scene({triggerElement: "#show7"})
+          .setClassToggle("#showquote7", "show") // add class toggle
+          .addTo(controller);
+
   $(".title").delay(1500).animate({"opacity": "1"}, 2000);

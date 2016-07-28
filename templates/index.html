@@ -178,7 +178,7 @@
     		<div id="show6" class="showquote wanda"></div>
     		<div id="showquote6" class="quote right higher">
     			<p>“Hearing my son say to the officer, ‘You shot me,’ it pierced my heart.”</p>
-    			<a id="twitter-icon" class="quote-share" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fsfchronicle.com%2F2016%2Fblack-voices%2F&text={{wanda_text|urlencode}}&hashtags={{config.HASHTAG}}"><i class="fa fa-twitter"></i>
+    			<a id="twitter-icon" class="quote-share" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fsfchronicle.com%2Fblack-voices%2F&text={{wanda_text|urlencode}}&hashtags={{config.HASHTAG}}"><i class="fa fa-twitter"></i>
 			    </a>
 			</div>
     	</div>
@@ -187,6 +187,30 @@
     		{%include '_text/wanda.html'%}
     	</div>
     	
+    </div>
+
+    <div id="police" class="portrait">
+
+        <div class="subhead">
+            <h2>Montgomery Singleton</h2>
+            <hr>
+            <p>The 22-year veteran of the San Francisco Police Department works out of the Bayview Station</p>
+        </div>
+
+        <div class="full-width-img">
+            <img src="{{ url_for('static', filename='img/police/1.jpg') }}">
+            <div id="show7" class="showquote wanda"></div>
+            <div id="showquote7" class="quote right higher">
+                <p>“Who likes to be thought of as a criminal right from step one?”</p>
+                <a id="twitter-icon" class="quote-share" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fsfchronicle.com%2Fblack-voices%2F&text={{police_text|urlencode}}&hashtags={{config.HASHTAG}}"><i class="fa fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="text">
+            {%include '_text/police.html'%}
+        </div>
+        
     </div>
 
     <div class="max">
