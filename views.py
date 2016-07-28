@@ -44,4 +44,10 @@ def index():
     	slug='',
     	title="",
     	description="",
-    	twitter_text="")
+    	twitter_text="",
+    	highland_text='"As a physician I watch these videos and I see health care infractions." Dr. Tiffany C. Anaebere',
+    	kamau_text='"I\'m not ready to have the conversation with my daughters." W. Kamau Bell',
+    	mistah_text='"We\'re just a bullet away from being a hashtag." Mistah F.A.B.',
+    	zaynab_text='"My Twitter timeline ... was a complete listing of details about deaths." Zaynab AbdulQadir-Morris',
+    	templeton_text='"I\'m 61 years old, and I have been stopped by police 53 times in my life." John William Templeton',
+    	wanda_text='"Hearing my son say to the officer, \'You shot me,\' it pierced my heart." Wanda Johnson')

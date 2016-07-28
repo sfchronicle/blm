@@ -41,7 +41,9 @@
     		<img src="{{ url_for('static', filename='img/highland/1.jpg') }}">
     		<div id="show1" class="showquote"></div>
             <div id="showquote1" class="quote">
-    			<p>“As a physician I watch these videos and I see health care infractions.”</p>
+    			<p>“As a physician I watch these videos and I see health care infractions.”
+			    </p><a id="twitter-icon" class="quote-share" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fsfchronicle.com%2Fblack-voices%2F&text={{highland_text|urlencode}}&hashtags={{config.HASHTAG}}"><i class="fa fa-twitter"></i>
+			    </a>
             </div>
 
     	</div>
@@ -64,6 +66,11 @@
     		<div id="show2" class="showquote"></div>
     		<div id="showquote2" class="quote">
     			<p>“I’m not ready to have the conversation with my daughters.”</p>
+
+              	<a id="twitter-icon" class="quote-share" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fsfchronicle.com%2Fblack-voices%2F&text={{kamau_text|urlencode}}&hashtags={{config.HASHTAG}}"><i class="fa fa-twitter"></i>
+			    </a>
+
+
     			<div class="sc-container">
                 	<span class="soundcite" data-url="/static/audio/kamau.mp3">Listen</span>
               	</div>
@@ -90,6 +97,7 @@
     		<div id="show3" class="showquote early"></div>
     		<div id="showquote3" class="quote top">
     			<p>“We’re just a bullet away from being a hashtag.”</p>
+    			<a id="twitter-icon" class="quote-share" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fsfchronicle.com%2Fblack-voices%2F&text={{mistah_text|urlencode}}&hashtags={{config.HASHTAG}}"><i class="fa fa-twitter"></i></a>
     			<div class="sc-container">
                 	<span class="soundcite" data-url="/static/audio/mistah.mp3" data-plays="1">Listen</span>
               	</div>
@@ -116,6 +124,8 @@
     		<div id="show4" class="showquote"></div>
     		<div id="showquote4" class="quote right">
     			<p>“My Twitter timeline … was a complete listing of details about deaths.”</p>
+    			<a id="twitter-icon" class="quote-share" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fsfchronicle.com%2Fblack-voices%2F&text={{zaynab_text|urlencode}}&hashtags={{config.HASHTAG}}"><i class="fa fa-twitter"></i>
+			    </a>
     			<div class="sc-container">
                 	<span class="soundcite" data-url="/static/audio/zaynab.mp3" data-plays="1">Listen</span>
               	</div>
@@ -140,7 +150,10 @@
     		<img src="{{ url_for('static', filename='img/templeton/2.jpg') }}">
     		<div id="show5" class="showquote early"></div>
     		<div id="showquote5" class="quote top">
-    			<p>“I’m 61 years old, and I have been stopped by police 53 times in my life.”</p></div>
+    			<p>“I’m 61 years old, and I have been stopped by police 53 times in my life.”</p>
+    			<a id="twitter-icon" class="quote-share" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fsfchronicle.com%2Fblack-voices%2F&text={{templeton_text|urlencode}}&hashtags={{config.HASHTAG}}"><i class="fa fa-twitter"></i>
+			    </a>
+			</div>
     	</div>
 
     	<div class="text">
@@ -162,6 +175,8 @@
     		<div id="show6" class="showquote wanda"></div>
     		<div id="showquote6" class="quote right higher">
     			<p>“Hearing my son say to the officer, ‘You shot me,’ it pierced my heart.”</p>
+    			<a id="twitter-icon" class="quote-share" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fsfchronicle.com%2F2016%2Fblack-voices%2F&text={{wanda_text|urlencode}}&hashtags={{config.HASHTAG}}"><i class="fa fa-twitter"></i>
+			    </a>
 			</div>
     	</div>
 
@@ -180,7 +195,7 @@
 				{{ credit.info('Hamed Aleaziz', 'haleaziz', 'Haleaziz' ) }}
 			</div>
 			<div class="group">
-				<p>Photographer</p>
+				<p>Photography & audio</p>
 				{{credit.info('Leah Millis', 'lmillis', 'LeahMillis') }}
 			</div>
 			<div class="group">
