@@ -1,6 +1,11 @@
 header {
 	box-shadow: none;
 }
+
+.logo-link {
+  display: inline-block;
+}
+
 .title {
 	line-height: 1.2;
 	padding:0 10px;
@@ -58,7 +63,7 @@ header {
 .intro {
 
   p {
-  	max-width: 800px;
+  	max-width: 825px;
   	color:#fff;
   	font-family: $sans-serif-light;
   	font-size: 18px;
