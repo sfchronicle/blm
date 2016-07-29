@@ -1,5 +1,5 @@
-# Black Lives Matter Portaits Project
-TK
+# Black lives, black voices
+Chronicle reporter Hamed Aleaziz and photographer Leah Millis spoke with several Bay Area residents – among them a comedian, a college student, a doctor and a police officer – about their experiences and perspectives on what’s become a national issue. Here are their stories in their own words.
 
 - Livereload for fast development
 - Grunt tasks for serving application
@@ -15,9 +15,9 @@ TK
 
 ### Installation
 ```bash
-$ git clone git@github.com:sfchronicle/ingleside.git $PROJECT_NAME
-$ cd $PROJECT_NAME
-$ mkvirtualenv $PROJECT_NAME
+$ git clone git@github.com:sfchronicle/blm.git blm
+$ cd blm
+$ mkvirtualenv blm
 $ pip install -r requirements.txt && npm install && bower install
 $ grunt serve
 ```
