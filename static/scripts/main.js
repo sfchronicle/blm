@@ -96,3 +96,8 @@ $(".begin").click(function() {
           .addTo(controller);
 
   $(".title").delay(1500).animate({"opacity": "1"}, 2000);
+
+  $('.to-top').click(function(){
+    $("html, body").animate({ scrollTop: 0 }, 2900);
+    return false;
+ });
