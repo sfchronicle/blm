@@ -168,6 +168,30 @@
         
     </div>
 
+    <div id="negrito" class="portrait">
+
+        <div class="subhead">
+            <h2>Fantastic Negrito</h2>
+            <hr>
+            <p>The 48-year-old singer-songwriter, who lives in Oakland, addressed police shootings in his new album, “The Last Days of Oakland”</p>
+        </div>
+
+        <div class="full-width-img">
+            <img src="{{ url_for('static', filename='img/negrito/1.jpg') }}">
+            <div id="show7" class="showquote"></div>
+            <div id="showquote7" class="quote">
+                <p>“Every single time I'm pulled over, I'm thinking: Wow, this could go either way.”</p>
+                <a id="twitter-icon" class="quote-share" title="Share on Twitter" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fsfchronicle.com%2Fblack-voices%2F&text={{negrito_text|urlencode}}&hashtags={{config.HASHTAG}}"><i class="fa fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="text">
+            {%include '_text/negrito.html'%}
+        </div>
+        
+    </div>
+
     <div id="templeton" class="portrait">
 
     	<div class="subhead">

@@ -51,4 +51,5 @@ def index():
     	zaynab_text='"My Twitter timeline ... was a complete listing of details about deaths." Zaynab AbdulQadir-Morris',
     	templeton_text='"I\'m 61 years old, and I have been stopped by police 53 times in my life." John William Templeton',
     	wanda_text='"Hearing my son say to the officer, \'You shot me,\' it pierced my heart." Wanda Johnson',
-    	police_text='"Who likes to be thought of as a criminal right from step one?" Montgomery Singleton')
+    	police_text='"Who likes to be thought of as a criminal right from step one?" Montgomery Singleton',
+        negrito_text='"Every single time I\'m pulled over I\'m thinking: Wow, this could go either way." Fantastic Negrito')
